@@ -1,0 +1,10 @@
+declared-services:
+  my-nlc-service:
+    label: natural_language_classifier
+    plan: standard
+applications:
+- services:
+  name: EKClassificationV3
+  command: npm start
+  path: .
+  memory: 512M
